@@ -1,0 +1,12 @@
+@font-face {
+    font-family: satoshi;
+    src: url("SATOSHI-VARIABLE.woff");
+}
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
