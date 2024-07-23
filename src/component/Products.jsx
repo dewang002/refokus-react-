@@ -45,11 +45,11 @@ function Products() {
     setposi(val * 21);
   };
   return (
-    <div className="container p-2 mx-auto mt-20  m-16 relative">
+    <div className="container flex flex-col gap-6 justify-center items-center md:block  md:p-2 mx-auto md:mt-20 m-16 relative">
       {items.map((elem, index) => (
         <Product key={index} items={elem} count={index} mover={mover} />
       ))}
-      <div className="absolute top-0 h-full w-full pointer-events-none">
+      <div className="hidden md:block absolute top-0 h-full w-full pointer-events-none">
         <div className="relative h-[20vh] w-full">
           <motion.div
             initial={{ y: posi, x: ["100%"] }}

@@ -4,11 +4,11 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 function card({width,color,start,para,hover}) {
   
   return (
-    <div className={`min-h-[30rem]  ${width} ${color} rounded-[20px] p-4 m-[1px] flex flex-col justify-between ${hover}  ease-in-out duration-300`}>
+    <div className={`min-h-[30rem]   md:${width} ${color} rounded-[20px] p-4 m-[1px] flex flex-col justify-between ${hover}  ease-in-out duration-300`}>
       <div className='top hover:p-1  ease-in-out duration-300'>
         <div className='flex items-center justify-between'>
         <p className='text-lg font-light'>up Next:Projects </p>
-        <IoIosArrowRoundForward />
+       <div className='text-4xl md:text-base'><IoIosArrowRoundForward /></div> 
         </div>
          <h1 className='text-3xl font-semibold tracking-tight w-52 pt-4'>Projects & Case Studies</h1>
       </div>
